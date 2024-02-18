@@ -1,0 +1,9 @@
+//Task: Separate compilation + Makefile 
+1)Waist-to-Hip Ratio (WTH), 
+2)Body Mass Index (BMI) 
+3)Body Fat Percentage (BFP)
+
+-----------------------------------
+Make
+-> HealthCheck.exe
+-> HealthCheck.exe : main.o risk_WTH.o

@@ -1,0 +1,113 @@
+<Terms>
+head file: "lamp.h"
+class implementation: "lamp.cpp"
+app program: "main.cpp"
+
+Rule = target
+dependencies:The file needed to generated the target file 
+Linker: a program combine separately compiled codes
+Phony Target: The name not using create file
+Stem: The original dependencies match the pattern rules
+denpendcies file:The file listing all the dependencies (including the header file) to create an object file
+===============================================
+<Makefile>
+1.search dependent files are present + check up-to-date
+2.if DNE: execute another rule to generate the dependencies 
+3.execute the commands to create target file
+
+#Calling
+a)make  -> call the first maker
+b)make <target> -> call the specific target
+
+#variable
+Create:<identifier> = <string>
+Use: $(<identifier>)
+
+#Symbol
+$@: target of the rule
+$^: ALL the dependencies of the rule.
+$<: first dependency of the rule.
+
+#pattern rule
+<start>%<end>
+def:represent every dependencies start with <start> & end with<end> 
+!!! if ordinary rule does not exist -> then tries pattern rules.
+!!! if matches multiple pattern rules ->either match first matched pattern rule ||  shortest stem
+
+#subtitute rule
+$(SRCS:.cpp=.o)  //replace SRCS ".cpp" with ".o"
+
+#implicit rule
+def: if target = a.o -> dependency = a.cpp
+
+#g++ flag -MMD -MP -c 
+When compile ".cpp" into ".o" file -> .d file is created
+
+#.cpp.o 
+==> %.o :%.cpp
+
+#remove
+a)rm -f *.o *.exe *.d //* = all object end with (...)
+b)clean:;	/bin/rm $(EXE) $(OBJS) $(DEPS)
+
+{*Structure:
+    <Name of rule(target)> : <dependencies> <dependencies>
+        <commands>
+    
+    <Name of rule(target)> : <dependencies> <dependencies>
+        <commands>}
+
+
+!!!Wall is used to separate the variable
+====================================================
+<Conditional directive>
+!prevent re-definition + re-definition 
+!add in every header file
+
+i.e.
+#ifndef LAMP_H
+#define LAMP_H
+
+//main body
+
+#endif
+
+
+
+
+
+<Preprocessor Directive>
+Preprocessor directive sign: #"
+change path: g++ -I
+
+
+
+
+======================================================
+
+
+
+
+[Take a rest la~]
+
+
+
+====================================================
+<library>
+1.def:collection of object codes
+2.C++ libaray is automatically linked by the Linker
+3.Other libaray(e.g. libABC.a) need to be linked by -I
+g++ -o myprog myprog.o -IABC
+====================================================
+<Static linking> 
+def: copy all relevant libaray
+Pros: runs faster + protable
+Cons: Larger in size
+
+<Dynamic linking>
+def:assume the library functions are share
+Pros: smaller size
+      many programs share the same copy
+Cons: run slowly
+      less protable
+====================================================
