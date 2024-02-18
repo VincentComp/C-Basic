@@ -1,0 +1,109 @@
+//Horizontal
+    for(int i = 0; i < BOARD_SIZE; i++)
+    {
+        bool finish = true; 
+
+        if(cells[i][0] == EMPTY)
+        {   
+            continue;
+        }
+        
+        for(int j = 0; j < BOARD_SIZE; j++)
+        {
+            if(cells[i][0] != cells[i][j])
+            {   
+                finish = false;
+                break;
+            }
+        }
+
+        if(finish) 
+        {
+            return true;
+        }
+    }
+
+
+
+    
+
+    //vertical
+    for(int i = 0; i < BOARD_SIZE; i++)
+    {
+        bool finish = true; 
+
+        if(cells[0][i] == EMPTY)
+        {   
+            continue;
+        }
+        
+        for(int j = 0; j < BOARD_SIZE; j++)
+        {
+            if(cells[0][i] != cells[j][i])
+            {   
+                finish = false;
+                break;
+            }
+        }
+
+        if(finish) 
+        {
+
+            return true;
+        }
+    }
+
+    //from L to R
+    for(int i = 0; i < BOARD_SIZE; i++)
+    {
+        bool finish = true; 
+
+        if(cells[0][0] == EMPTY)
+        {   
+            break;
+        }
+
+        for(int i = 0, j = 0; i < BOARD_SIZE; i++, j++)
+        {
+            if(cells[0][0] != cells [i][j])
+            {
+                finish = false;
+                break;
+            }
+        }
+        
+
+        if(finish) 
+        {
+            return true;
+        }
+    }
+
+
+    //from R to L
+    for(int i = 0; i < BOARD_SIZE; i++)
+    {
+        bool finish = true; 
+
+        if(cells[0][BOARD_SIZE-1] == EMPTY)
+        {   
+            break;
+        }
+
+        for(int i = 0, j = 0; i < BOARD_SIZE; i++, j++)
+        {
+            if(cells[0][BOARD_SIZE-1] != cells [i][BOARD_SIZE-1-j])
+            {
+                finish = false;
+                break;
+            }
+        }
+        
+
+        if(finish) 
+        {
+            return true;
+        }
+    }
+
+    return false;
