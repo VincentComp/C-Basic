@@ -1,0 +1,17 @@
+Option 1: Integer sequences
+Option 2: Course sequences
+Select an option (enter -1 to exit): For course sequence 1
+Enter the number of elements: For course sequence 2
+Enter the number of elements: Is {COMP2611, COMP2012} equal to {COMP2611, COMP2012}? Yes
+{COMP2611, COMP2012} + {COMP2611, COMP2012} = {COMP2611, COMP2611, COMP2012, COMP2012}
+{COMP2611, COMP2012} + {COMP2611, COMP2012} = {COMP2611, COMP2611, COMP2012, COMP2012}
+Option 1: Integer sequences
+Option 2: Course sequences
+Select an option (enter -1 to exit): For course sequence 1
+Enter the number of elements: For course sequence 2
+Enter the number of elements: Is {LANG4030, ENGG2010, COMP2012} equal to {COMP2611, COMP2011}? No
+{LANG4030, ENGG2010, COMP2012} + {COMP2611, COMP2011} = {LANG4030, ENGG2010, COMP2611, COMP2012, COMP2011}
+{COMP2611, COMP2011} + {LANG4030, ENGG2010, COMP2012} = {LANG4030, ENGG2010, COMP2611, COMP2012, COMP2011}
+Option 1: Integer sequences
+Option 2: Course sequences
+Select an option (enter -1 to exit): 

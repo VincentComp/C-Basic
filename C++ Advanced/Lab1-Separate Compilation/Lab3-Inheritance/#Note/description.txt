@@ -1,0 +1,6 @@
+T1: add prototype in Boar.h
+T2: aa MIL in construction in Boar.cpp + change function
+
+T3: prototype in TherapyDog.h
+
+T4: add function in straydog.cpp

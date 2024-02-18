@@ -1,0 +1,13 @@
+#Background
+=>auto system compute salaries all employee
+a)Full Time: Base salary + seniority + related paycheck +bonus
+b)Contract: base salary + working hour
+
+
+
+Base: Employee
+=> get_salary + get_base_salary
+==========================================================================================
+T1:Employee.h
+T2:Employee.cpp
+T3:Full_time.h

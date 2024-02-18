@@ -1,0 +1,38 @@
+PointSet1:
+Initialized by PointSet's conversion constructor
+The PointSet is empty!
+Remove last point
+No points
+The PointSet is empty!
+Does PointSet1 collinear? true
+
+PointSet2:
+Initialized by PointSet's other constructor
+Number of points: 4
+points: 
+(0,0)
+(1.5,2)
+(3,4)
+(7.5,10)
+Does PointSet2 collinear? true
+
+PointSet3:
+Initialized by PointSet's copy constructor
+Remove last point
+Add point (3, 1.7)
+Number of points: 4
+points: 
+(0,0)
+(1.5,2)
+(3,4)
+(3,1.7)
+
+Add point (5, 5)
+Insufficient array space
+Number of points: 4
+points: 
+(0,0)
+(1.5,2)
+(3,4)
+(3,1.7)
+Does PointSet3 collinear? false

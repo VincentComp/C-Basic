@@ -1,0 +1,13 @@
+PointSet: class
+{Points:
+ capacity:Max num of point
+ num_point:
+}
+=> represents a set of points
+=> maintains a dynamic array of point objects
+
+Point: class
+{x: x-coordinate
+ y: y-coordinate
+}
+
