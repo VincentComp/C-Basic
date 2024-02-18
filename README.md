@@ -1,7 +1,7 @@
 # Overview
 This repository contains the project for COMP2011 & COMP2012 of
 
-# C++ Basic - Programming and Data structures using C++
+# C++ Basic 
 * Variables and control statements
 * Arrays 
 * Pointers
@@ -11,4 +11,15 @@ This repository contains the project for COMP2011 & COMP2012 of
 * Queues
 * Binary trees
 * Recursion
-* Basics of object oriented programming
+
+
+# C++ Advanced
+* Abstract data types
+* Creation, initialization, and destruction of objects
+* Class hierarchies
+* Polymorphism
+* Inheritance
+* Dynamic binding
+* Generic programming using templates
+* Data structures: linked lists, stacks, queues, binary trees
+* Algorithms such as searching and hashing.
