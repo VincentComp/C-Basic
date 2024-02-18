@@ -1,0 +1,4 @@
+plaintext -(key)-> ciphertext 
+
+a: 0
+b: 1

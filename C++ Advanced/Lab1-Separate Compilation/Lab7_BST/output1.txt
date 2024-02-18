@@ -1,0 +1,49 @@
+Lab 7 Exercise.
+Start processing binary search tree 1.
+Create the tree with Alice: (60, 2.5)
+Insert Steven: (75, 2.0)
+Insert Kevin: (74, 3.0)
+Insert Tom: (55, 1.0)
+Insert Desmond: (90, 4.0)
+Insert Cecia: (90, 3.5)
+The size of tree 1 is 6.
+
+Check if contains (90, 4.0): 
+The name is Desmond.
+Result: true
+
+Check if contains (77, 2.0): 
+Result: false
+
+Check if contains Kevin: 
+The score is (74, 3).
+Result: true
+
+Check if contains Carl: 
+Result: false
+
+End processing binary search tree 1.
+
+Start processing binary search tree 2.
+Create the tree by copying tree 1.
+Try to insert Darwin: (75, 2.0)
+The name is Steven.
+The data exists.
+
+Try to insert Tom: (85, 1.5)
+The score is (55, 1).
+The data exists.
+
+Try to insert Grace: (70, 1.5)
+
+The size of tree 2 is 7.
+
+Print students by ascending order.
+Name: Tom, Point: (55, 1).
+Name: Alice, Point: (60, 2.5).
+Name: Grace, Point: (70, 1.5).
+Name: Kevin, Point: (74, 3).
+Name: Steven, Point: (75, 2).
+Name: Cecia, Point: (90, 3.5).
+Name: Desmond, Point: (90, 4).
+End processing binary search tree 2.

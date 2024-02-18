@@ -1,0 +1,3 @@
+dictionary storing { abbreviations :  meaning}
+
+insert, remove, find 

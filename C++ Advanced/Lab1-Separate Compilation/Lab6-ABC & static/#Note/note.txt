@@ -1,0 +1,32 @@
+
+Static variable
+=> initialized only once
+=> retain it value (~lambda)
+=> global function with scope
++
+    (=> reside on static data region + lifetime across entire run)
+
+
+
+a)in main
+=> zero-initialized or default initialized
+
+b)in function
+=> can only access within the function
+
+c)in class
+=> already exist before the object is created
+=> can't initialized in class definition (unless const and enum)
+!!! must defined outside the define in .cpp
+
+d)static member(class) function(method)
+=> called by :: or .
+!!!can call without object
+%no implicit  this pointer
+%can only make use of static data memebrs
+$cannot be const/virtual + overlaoded
+
+
+normal : int fun(){return data;} -> int haha :: fun(){return this -> data;}
+static : static int fun(){return data;} --> int haha :: fun(){return haha :: data;}
+=========================================
