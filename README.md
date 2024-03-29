@@ -1,5 +1,3 @@
-# Overview
-This repository contains the project for COMP2011 & COMP2012 of
 
 # C++ Basic 
 * Variables and control statements
